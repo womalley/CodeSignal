@@ -1,0 +1,11 @@
+C:\Users\bomal_000\Documents\CodeSignal\firstDuplicate\bin\Debug\netcoreapp2.1\firstDuplicate.deps.json
+C:\Users\bomal_000\Documents\CodeSignal\firstDuplicate\bin\Debug\netcoreapp2.1\firstDuplicate.runtimeconfig.json
+C:\Users\bomal_000\Documents\CodeSignal\firstDuplicate\bin\Debug\netcoreapp2.1\firstDuplicate.runtimeconfig.dev.json
+C:\Users\bomal_000\Documents\CodeSignal\firstDuplicate\bin\Debug\netcoreapp2.1\firstDuplicate.dll
+C:\Users\bomal_000\Documents\CodeSignal\firstDuplicate\bin\Debug\netcoreapp2.1\firstDuplicate.pdb
+C:\Users\bomal_000\Documents\CodeSignal\firstDuplicate\obj\Debug\netcoreapp2.1\firstDuplicate.csprojAssemblyReference.cache
+C:\Users\bomal_000\Documents\CodeSignal\firstDuplicate\obj\Debug\netcoreapp2.1\firstDuplicate.csproj.CoreCompileInputs.cache
+C:\Users\bomal_000\Documents\CodeSignal\firstDuplicate\obj\Debug\netcoreapp2.1\firstDuplicate.AssemblyInfoInputs.cache
+C:\Users\bomal_000\Documents\CodeSignal\firstDuplicate\obj\Debug\netcoreapp2.1\firstDuplicate.AssemblyInfo.cs
+C:\Users\bomal_000\Documents\CodeSignal\firstDuplicate\obj\Debug\netcoreapp2.1\firstDuplicate.dll
+C:\Users\bomal_000\Documents\CodeSignal\firstDuplicate\obj\Debug\netcoreapp2.1\firstDuplicate.pdb

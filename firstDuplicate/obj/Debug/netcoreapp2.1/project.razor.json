@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "c:\\Users\\bomal_000\\Documents\\CodeSignal\\firstDuplicate\\firstDuplicate.csproj",
+  "TargetFramework": "netcoreapp2.1",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  }
+}
