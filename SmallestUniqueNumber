@@ -1,0 +1,48 @@
+using System;
+using System.IO;
+using System.Collections.Generic;
+using System.Text;
+using System.Collections;
+
+public static class Program {
+  static void Main() {
+    using (StreamReader reader = new StreamReader(Console.OpenStandardInput()))
+    while (!reader.EndOfStream) {
+      string line = reader.ReadLine(); //user input string of numbers to find smallest unique
+      
+      line = "1 2 1 3 4 5 6 6 2"; //test string, normally read in on line 11
+      //parse line by spaces into a number array
+      string[] nums = line.Split(' ');
+
+      //hashset for tracking number count
+      Hashtable table = new Hashtable();
+      
+      int i = 0;
+      for (i = 0; i < nums.Length; i++) {
+        
+        if (table.Contains(nums[i])) {
+          table[nums[i]] = false;
+        }
+        else { //add key/val
+          table.Add(nums[i], true);
+        }
+      }
+      
+      int res = -1; //integer ceiling, should set to -1 as negatives are assumed not to be in input string and a case can be made below to check
+      
+      //find smallest
+      for (i = 0; i < nums.Length; i++) {
+        if (table.Contains(nums[i])) {
+          bool val = (bool)table[nums[i]];
+          if (val == true) {
+		    if (res > Convert.ToInt32(nums[i]) || res == -1) { 
+              res = Convert.ToInt32(nums[i]); 
+            }
+	      }
+        }
+      }
+      
+      Console.WriteLine(res);
+    }
+  }
+}
