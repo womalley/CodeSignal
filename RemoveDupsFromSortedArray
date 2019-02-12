@@ -1,0 +1,29 @@
+/* Given a sorted array nums, remove the duplicates in-place such that each element appear only once and return the new length.
+Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory. 
+Note that the input array is passed in by reference, which means modification to the input array will be known to the caller as well. */
+
+/* expected output of [1 1 2] will be [1 2] */
+
+public class Solution {
+    public int RemoveDuplicates(int[] nums) {
+        
+        int i = 0;
+        int k = 0; //for manipulating num positions
+        for (i = 0; i < nums.Length; i++) {
+            
+            //if i doesnt equal i+1 add to beginning
+            if ((i+1 <= nums.Length-1) && (nums[i] != nums[i+1])) {
+                nums[k] = nums[i];
+                k++;
+            }
+            //last number in array case
+            else if (i == nums.Length - 1) {
+                if (nums[i] != nums[i-1]) {
+                    nums[k] = nums[i];
+                    k++;
+                }
+            }
+        }
+        return (k);
+    }
+}
