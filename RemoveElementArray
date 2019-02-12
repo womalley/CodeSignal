@@ -1,0 +1,27 @@
+/* Given an array nums and a value val, remove all instances of that value in-place and return the new length.
+
+   Example input: [3,2,2,3], val = 3 Output: length = 2 and [2,2]
+*/
+
+public class Solution {
+    public int RemoveElement(int[] nums, int val) {
+        
+        int i = 0;
+        int k = 0;
+        int len = nums.Length;
+        
+        for (i = 0; i < nums.Length; i++) {
+            
+            //not the val to be removed
+            if (nums[i] != val) {
+                nums[k++] = nums[i];
+            }
+            //the val to be removed
+            else {
+                len--;
+            }
+        }
+        
+        return (len);
+    }
+}
