@@ -7,20 +7,29 @@ Note that the input array is passed in by reference, which means modification to
 public class Solution {
     public int RemoveDuplicates(int[] nums) {
         
+        //base case, one num in array
+        if (nums.Length == 1) {
+            return (1);
+        }
+        
         int i = 0;
         int k = 0; //for manipulating num positions
         for (i = 0; i < nums.Length; i++) {
             
-            //if i doesnt equal i+1 add to beginning
-            if ((i+1 <= nums.Length-1) && (nums[i] != nums[i+1])) {
-                nums[k] = nums[i];
-                k++;
+            //if i doesnt equal i+1 add both to beginning
+            if (((i+1) < nums.Length) && (nums[i] != nums[i+1])) {
+                if (k == 0) { //first set of changes
+                    nums[k++] = nums[i];
+                    nums[k++] = nums[i+1];
+                }
+                else {
+                    nums[k++] = nums[i+1];
+                }
             }
-            //last number in array case
             else if (i == nums.Length - 1) {
-                if (nums[i] != nums[i-1]) {
-                    nums[k] = nums[i];
-                    k++;
+                //all the same number in array
+                if (k == 0) {
+                    return (1);
                 }
             }
         }
